@@ -4,7 +4,7 @@ const dotenv = require('dotenv');
 
 dotenv.config({ path : './config/config.env' });
 
-const bot = new Telegram(process.env.TELEGRAM_BOT_TOKEN, { polling: true });
+const bot = new Telegram(process.env.TELEGRAM_BOT_TOKEN, {polling: true});
 
 const config = new Configuration({
     apiKey: process.env.OPENAI_API_KEY
